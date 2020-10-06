@@ -3,8 +3,7 @@ from os import system, name
 def stores_analysis(rows, columns, grid):
     num = 0
     for rowloop in range(rows):
-        for columnloop in range(columns):
-            print(grid[rowloop][columnloop])
+        for columnloop in range(columns):  
             if grid[rowloop][columnloop] == 1:
                 grid, area = infect_grid(grid, rows, columns, rowloop, columnloop, 0)
                 if area > 1:
