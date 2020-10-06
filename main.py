@@ -17,7 +17,7 @@ def main():
     for rowloop in range(rows):
         temline = input()
         while len(temline) != columns or temline.count('1') + temline.count('0') != columns:
-            temline = input('Not valid input...Try again')
+            temline = input('Not valid input...Try again\n')
         grid[rowloop] = list(temline)
     num = 0
     for rowloop in range(rows):
